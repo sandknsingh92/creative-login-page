@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Animated Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="scene" id="scene">
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <!-- LOGIN CARD -->
+
+    <section class="login-card">
+
+      <div class="card-glow"></div>
+
+      <div class="brand-mark">✦</div>
+
+      <p class="eyebrow">WELCOME BACK</p>
+
+      <h1>Sign in</h1>
+
+      <p class="subtitle">
+        Your next great idea starts here.
+      </p>
+
+      <form id="loginForm">
+
+        <label for="email">Email address</label>
+
+        <div class="input-wrap">
+          <span>✉</span>
+
+          <input
+            id="email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="username"
+            required
+          >
+        </div>
+
+        <label for="password">Password</label>
+
+        <div class="input-wrap">
+          <span>⌑</span>
+
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+            required
+          >
+
+          <button
+            class="show-password"
+            type="button"
+            id="togglePassword"
+          >Show</button>
+        </div>
+
+        <div class="form-row">
+
+          <label class="remember">
+            <input type="checkbox">
+            <span>Remember me</span>
+          </label>
+
+          <a href="#" id="forgotLink">
+            Forgot password?
+          </a>
+
+        </div>
+
+        <button class="login-button" type="submit">
+          Sign in <span>→</span>
+        </button>
+
+        <p class="message" id="message"></p>
+
+      </form>
+
+      <!-- BEAUTIFUL SIGNUP SECTION -->
+
+      <div class="signup-box">
+
+        <div class="signup-divider">
+          <span></span>
+          <p>NEW TO OUR SPACE?</p>
+          <span></span>
+        </div>
+
+        <div class="signup-content">
+
+          <div class="signup-icon">✧</div>
+
+          <div class="signup-text">
+            <strong>Start something amazing!</strong>
+            <small>Create your free account today.</small>
+          </div>
+
+        </div>
+
+        <a href="#" class="signup-button" id="signupLink">
+          Create Your Account
+          <span>↗</span>
+        </a>
+
+        <p class="signup-footer">
+          ✨ Join us and make every moment count
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- ANIMATED BELL -->
+
+    <aside class="bell-area">
+
+      <div class="bell-caption">
+        A little pull<br>
+        <strong>changes the mood</strong>
+      </div>
+
+      <div class="bell">
+
+        <div class="bell-top"></div>
+
+        <div class="bell-body">
+          <span class="bell-shine"></span>
+        </div>
+
+        <div class="bell-clapper"></div>
+
+      </div>
+
+      <div class="rope" id="rope">
+
+        <div class="rope-line"></div>
+
+        <button
+          class="rope-ball"
+          id="ropeBall"
+          type="button"
+          aria-label="Pull the bell rope"
+        >
+          <span></span>
+        </button>
+
+      </div>
+
+      <p class="pull-hint">PULL THE ROPE</p>
+
+    </aside>
+
+    <div class="theme-note" id="themeNote">
+      Theme 01 · Midnight blue
+    </div>
+
+  </main>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
